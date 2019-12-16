@@ -404,7 +404,7 @@ public class EmailRelayerActivity extends AppCompatActivity implements
 
         builder.setView(view);
         final AlertDialog.Builder progressBuilder = new AlertDialog.Builder(this);
-        progressBuilder.setView(LayoutInflater.from(this).inflate(R.layout.dialog_progress,null,false));
+        progressBuilder.setView(LayoutInflater.from(this).inflate(R.layout.dialog_progress, null, false));
 
         builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
             @Override

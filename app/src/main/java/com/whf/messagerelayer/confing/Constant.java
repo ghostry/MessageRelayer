@@ -19,6 +19,7 @@ public class Constant {
     public static final String KEY_RECEIVER = "is_receiver";
     public static final String KEY_RELAY_SMS = "is_sms_relay";
     public static final String KEY_RELAY_EMAIL = "is_email_relay";
+    public static final String KEY_RELAY_API = "is_api_relay";
 
 
     //手机配置
@@ -45,6 +46,9 @@ public class Constant {
     public static final String EMAIL_SERVICER_GMAIL = "Gmail";
     public static final String EMAIL_SERVICER_OTHER = "其他邮箱";
 
+    //API配置
+    public static final String KEY_API_ID = "api_id";
+    public static final String KEY_APT_Token = "api_token";
 
     //数据库配置
     public static final String DB_TABLE_NAME = "contact";

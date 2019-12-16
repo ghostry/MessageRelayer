@@ -148,4 +148,22 @@ public class NativeDataManager {
         return mPreference.getString(Constant.KEY_CONTENT_PREFIX,null);
     }
 
+    public void setAPIRelay(Boolean b) {
+        mPreference.edit().putBoolean(Constant.KEY_RELAY_API, b).apply();
+    }
+    public boolean getAPIRelay() {
+        return mPreference.getBoolean(Constant.KEY_RELAY_API, false);
+    }
+    public void setAPIID(String name) {
+        mPreference.edit().putString(Constant.KEY_API_ID, name).apply();
+    }
+    public String getAPIID(){
+        return mPreference.getString(Constant.KEY_API_ID,null);
+    }
+    public void setAPIToken(String name) {
+        mPreference.edit().putString(Constant.KEY_APT_Token, name).apply();
+    }
+    public String getAPIToken(){
+        return mPreference.getString(Constant.KEY_APT_Token,null);
+    }
 }
