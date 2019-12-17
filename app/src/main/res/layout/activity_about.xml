@@ -14,26 +14,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/icon"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="短信助手 1.1.0"
+        android:text="短信助手 1.2.0"
         android:textColor="@color/colorLightText"
-        android:textSize="18sp"/>
+        android:textSize="18sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:text="邮箱：ghostry@ghostry.cn"
         android:textIsSelectable="true"
-        android:text="邮箱：292265806@qq.com"
-        android:textSize="15sp"/>
+        android:textSize="15sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:gravity="center_horizontal"
+        android:text="Github：https://github.com/ghostry/MessageRelayer"
         android:textIsSelectable="true"
-        android:text="Github：https://github.com/HaoFeiWang/MessageRelayer"
-        android:textSize="15sp"/>
+        android:textSize="15sp" />
 </LinearLayout>

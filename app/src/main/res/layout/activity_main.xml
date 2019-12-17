@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
     <RelativeLayout
@@ -34,12 +35,14 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:background="#27ae60">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
             android:layout_centerVertical="true"
-            android:src="@drawable/email_image"/>
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/api_image"
+            app:srcCompat="@drawable/api_image" />
         <TextView
             android:id="@+id/text_api_tip"
             android:layout_width="wrap_content"
@@ -52,6 +55,7 @@
             android:textSize="18sp"
             android:textColor="@android:color/white"/>
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/sms_relay_layout"
         android:layout_width="match_parent"
@@ -59,9 +63,10 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#2980b9">
+        android:background="#6C29B9">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -69,34 +74,36 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="20dp"
             android:text="转发至短信"
-            android:textSize="18sp"
             android:textColor="@android:color/white"
-            android:id="@+id/textView"/>
+            android:textSize="18sp" />
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/sms_image"
             android:layout_alignBottom="@+id/textView"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_marginStart="27dp"
-            android:id="@+id/imageView"/>
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/sms_image" />
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/email_relay_layout"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="#27ae60">
+        android:background="#2B3BA5">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
             android:layout_centerVertical="true"
-            android:src="@drawable/email_image"/>
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/email_image" />
+
         <TextView
             android:id="@+id/text_email_tip"
             android:layout_width="wrap_content"
@@ -106,7 +113,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="20dp"
             android:text="转发至邮件"
-            android:textSize="18sp"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
     </RelativeLayout>
 </LinearLayout>
