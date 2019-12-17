@@ -1,6 +1,8 @@
 package com.whf.messagerelayer.activity;
 
+import android.Manifest;
 import android.content.Intent;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAPILayout.setOnClickListener(this);
         mEmailLayout.setOnClickListener(this);
         mRuleLayout.setOnClickListener(this);
+        checkAndGetPermission();
     }
 
     @Override
@@ -92,5 +95,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.rule_layout:
                 startActivity(new Intent(this, RuleActivity.class));
         }
+    }
+    private void checkAndGetPermission() {
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECEIVE_SMS, Manifest.permission.READ_CALL_LOG}, 0);
     }
 }
