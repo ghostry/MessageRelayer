@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="短信助手 1.2.0"
+        android:text="短信助手 1.2.1"
         android:textColor="@color/colorLightText"
         android:textSize="18sp" />
 
