@@ -60,7 +60,7 @@ public class APIRelayerManager {
         String token = dataManager.getAPIToken();
         try {
             JSONObject jsonParam = new JSONObject();
-            jsonParam.put("token", token);
+            jsonParam.put("token", MD5Utils.sign(token));
             jsonParam.put("phone", phone);
             jsonParam.put("text", content);
             String param = jsonParam.toString();
